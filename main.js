@@ -32,16 +32,14 @@ $(function(){
 		  "age":18,
 		  "experience":1
 	   }
-	};
-	
+	};	
     //1) object to arr
     let arr = [];
 	$.each(dataFromAndrey, function(key, value){
 		value.name = key;
 		arr.push(value);
 	})
-	console.log(arr);
-	
+	console.log(arr);	
 	//2) sort by dateworking time
 	console.log(
 		arr.sort(function(a, b){
