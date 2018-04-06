@@ -113,7 +113,6 @@ $(function(){
 		"Y": "-.--",
 		"Z": "--.."
 	}
-<<<<<<< HEAD
 	//home work
 	function translateAlfabetToMorze(value){
 		let arrMorzWords = value.split(" "),
@@ -158,21 +157,6 @@ $(function(){
 	
 	
 	// class lesson
-=======
-				
-	function translateAlfabetToMorze(value){
-		let arrMorz = value.split(""),
-			separateChar = " ",
-			separateWord = "   ",
-			result;
-		arrMorz.forEach(function(item){
-			return result += obj[item.toUpperCase()] + separateChar;
-		})
-		return "Morze text" + result;
-	}	
-	translateAlfabetToMorze("Hello world")
-	
->>>>>>> dc4d2d42574b30197b05d7b3d4a61cb57651c458
 	var coins = {
 		penny: 0.01,
 		nickel: 0.05,
