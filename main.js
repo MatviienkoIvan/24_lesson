@@ -131,11 +131,9 @@ $(function(){
 	}	
 	
 	function translateMorzeToAlfabet(datas){
-		let translateArr = [];
-		$.each(obj, function(key, value){
-			let newObj = {};
-				newObj[value] = value;
-				translateArr.push(newObj);
+		let newObj = {};
+		$.each(obj, function(key, value){			
+				newObj[value] = key;
 		})
 		let	arrMorzWords = datas.split("   "),
 			separateChar = " ",
@@ -144,7 +142,7 @@ $(function(){
 				let arrMorzChar = elem.split(separateChar),
 					iteration = "";
 				arrMorzChar.forEach(function(item){		
-					return iteration += translateArr[item];					
+					return iteration += newObj[item];					
 				})
 				return result += iteration + separateChar;
 			})		
